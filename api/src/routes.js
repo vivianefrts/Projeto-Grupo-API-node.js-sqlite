@@ -1,7 +1,12 @@
 import { Router } from "express";
-import { createTable, insertPessoa, updatePessoa, selectPessoas, selectPessoa, deletePessoa } from './Controler/Pessoa.js';
+import { openDb } from "./configDB.js";
+import { createTablePessoa ,insertPessoa, updatePessoa, selectPessoas, selectPessoa, deletePessoa } from './Controler/Pessoa.js';
+import { createTableCartoes,insertCartao,selectCartoes,selectCartao,updateCartao,deleteCartao } from "./Controler/Cartoes.js";
 
 const router = Router();
+openDb()
+createTablePessoa()
+createTableCartoes()
 
 router.get('/', (req, res)=>{
     res.json({
@@ -15,5 +20,11 @@ router.get('/pessoa', selectPessoa);
 router.post('/pessoa', insertPessoa);
 router.put('/pessoa', updatePessoa);
 router.delete('/pessoa', deletePessoa);
+
+router.get('/cartoes', selectCartoes);
+router.get('/cartao', selectCartao);
+router.post('/cartao', insertCartao);
+router.put('/cartao', updateCartao);
+router.delete('/cartao', deleteCartao);
 
 export default router;
