@@ -9,7 +9,6 @@ Utilizamos:
 - Express
 - Express Router
 - Cors
-- Https
 - Sqlite
 
 Nós desenvolvemos uma API simples porém estruturada com rotas, controladore e conexão com banco de dados. Como o objetivo foi compartilhar conhecimento e contribuindo com quem está aprendendo ou quer reforçar conhecimento, desenvolvi um CRUD minimalista de Pessoas, deixando aberto para quem quiser complementar com as colunas e tabelas que desejarem.
