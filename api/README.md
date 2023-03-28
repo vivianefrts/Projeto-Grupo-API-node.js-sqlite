@@ -1,7 +1,7 @@
 # API Node.js com Sqlite
 - `npm install` dentro do diretorio `/api` para instalar as dependências.
 - `npm run dev` dentro do diretorio `/api` para iniciar a api com o `nodemon`
-Esse repositório contém o resultado de um passo a passo que está no YouTube onde eu explico como desenvolvemos uma API com Node.js.
+- Esse repositório contém o resultado de um passo a passo que está no YouTube onde eu explico como desenvolvemos uma API com Node.js.
 Para quem quiser acompanhar a playlist do YouTube, acesse:
 
 [![Watch the video](./docs/tumb.png)](https://www.youtube.com/watch?v=yEpiT-N2DUc&list=PLygIEirBzJi4lTC-5nzfhEyxuKq2y1uiR)
